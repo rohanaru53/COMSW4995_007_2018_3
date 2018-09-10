@@ -1,0 +1,4 @@
+conda create -n coms007 --file requirements.txt
+source activate coms007
+python -m ipykernel install --user --name coms007 --display-name 'coms007'
+source deactivate
