@@ -13889,7 +13889,7 @@ dtype: float64</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_a</span> <span class="o">+</span> <span class="n">n_b</span> <span class="o">==</span> <span class="n">n</span>
@@ -13899,10 +13899,30 @@ dtype: float64</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[53]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">time</span>
@@ -13918,10 +13938,29 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CPU times: user 5.16 s, sys: 0 ns, total: 5.16 s
+Wall time: 5.16 s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">rand_conv_diffs</span><span class="p">,</span> <span class="n">norm_hist</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -13932,16 +13971,58 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">rand_conv_diffs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">diff_pct_conv</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">rand_conv_diffs</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[56]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.369</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13956,7 +14037,7 @@ for i in range(1000):
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># using our session_times example</span>
@@ -13970,10 +14051,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[57]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.7679336872294898</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">pvalue</span><span class="o">/</span><span class="mi">2</span>
@@ -13983,10 +14084,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[58]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.3839668436147449</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.weightstats</span> <span class="k">import</span> <span class="n">ttest_ind</span>
@@ -13999,7 +14120,7 @@ for i in range(1000):
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">session_times</span><span class="p">[</span><span class="n">session_times</span><span class="o">.</span><span class="n">Page</span> <span class="o">==</span> <span class="s1">&#39;Page A&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Time</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
@@ -14013,10 +14134,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[60]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(-0.29785465226207586, 0.38396684361474487, 29.053889373399006)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># using our conversion rate example?</span>
@@ -14034,7 +14175,7 @@ for i in range(1000):
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.proportion</span> <span class="k">import</span> <span class="n">proportions_ztest</span>
@@ -14047,6 +14188,26 @@ for i in range(1000):
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[62]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(0.437307786942451, 0.33094407441560325)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14097,7 +14258,7 @@ for i in range(1000):
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.power</span> <span class="k">import</span> <span class="n">tt_ind_solve_power</span>
@@ -14110,7 +14271,7 @@ for i in range(1000):
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># choose one to set as None</span>
@@ -14126,10 +14287,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[64]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10396.728892909725</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># choose one to set as None</span>
@@ -14142,6 +14323,26 @@ for i in range(1000):
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[65]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>85.03128688801092</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14229,7 +14430,7 @@ for i in range(1000):
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># have two ads, each of which leads to some unknown response rate</span>
@@ -14247,7 +14448,7 @@ for i in range(1000):
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># round 1, choose A</span>
@@ -14259,10 +14460,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[68]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># round 2, choose B</span>
@@ -14274,10 +14495,30 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[69]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># round 3, </span>
@@ -14294,6 +14535,7 @@ for i in range(1000):
         <span class="k">else</span><span class="p">:</span>
             <span class="n">pulls_B</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ad_B</span><span class="o">.</span><span class="n">rvs</span><span class="p">())</span>
             <span class="n">choice</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
+    <span class="c1"># greedy</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">resp_A</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pulls_A</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">pulls_A</span><span class="p">)</span>
         <span class="n">resp_B</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pulls_B</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">pulls_B</span><span class="p">)</span>
@@ -14316,10 +14558,28 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False A [1, 1] [0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
@@ -14331,10 +14591,37 @@ for i in range(1000):
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False A [1, 1, 1] [0]
+False A [1, 1, 1, 1] [0]
+True B [1, 1, 1, 1] [0, 0]
+True A [1, 1, 1, 1, 1] [0, 0]
+False A [1, 1, 1, 1, 1, 1] [0, 0]
+True A [1, 1, 1, 1, 1, 1, 0] [0, 0]
+False A [1, 1, 1, 1, 1, 1, 0, 1] [0, 0]
+False A [1, 1, 1, 1, 1, 1, 0, 1, 1] [0, 0]
+False A [1, 1, 1, 1, 1, 1, 0, 1, 1, 1] [0, 0]
+False A [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0] [0, 0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># did we pick the best one?</span>
@@ -14342,6 +14629,26 @@ for i in range(1000):
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[72]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(0.5656240367898278, 0.01461287278619727)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14383,7 +14690,7 @@ for i in range(1000):
 
 </div>
 </div>
-</div></div></section></section>
+</div>
 </div>
 </div>
 
