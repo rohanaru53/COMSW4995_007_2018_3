@@ -5,8 +5,8 @@ import plotly.graph_objs as go
 
 import pandas as pd
 
-df = pd.read_csv('../data/sp500_px.csv')
-df = df[['CVX','XOM','AAPL']]
+df = pd.read_csv('../data/sp500_px_subset.csv')
+#df = df[['CVX','XOM','AAPL']]
 
 app = dash.Dash()
 
